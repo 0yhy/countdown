@@ -1,0 +1,31 @@
+<view class='wrapper'>
+  <view class='row'>
+    <view>标题</view>
+    <input class='row-right'/>
+  </view>
+  <view class='row'>
+    <view>备注</view>
+    <input class='row-right' placeholder='非必填'/>
+  </view>
+  <view class='row'>
+    <picker
+      mode="date" 
+      value="{{date}}" 
+      start="2020-09-15" 
+      end="{{endDate}}"
+      bindchange="bindDateChange" 
+      fields="day"
+      style='width: 100%;'
+    >
+      <view class='row' style='width: 100%;'>
+        <view>选择日期</view>
+        <view class='row-right'>{{date}}</view>
+      </view>
+    </picker>
+  </view>
+  <view class='row'>
+    <view>剩余天数</view>
+    <view class='row-right'>{{count}}天</view>
+  </view>
+  <view class='save' style='background-color: {{themeColor}}'>保存</view>
+</view>

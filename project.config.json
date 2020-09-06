@@ -1,0 +1,29 @@
+{
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "cli_9fc4e8af612c100e",
+	"projectname": "countdown",
+	"condition": {
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "添加倒计时",
+					"pathName": "pages/add/add",
+					"query": "",
+					"scene": "1001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				}
+			]
+		}
+	}
+}

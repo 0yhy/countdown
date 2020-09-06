@@ -1,0 +1,27 @@
+{
+  "pages": ["pages/index/index", "pages/me/me", "pages/add/add"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "倒计时",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#8a8a8a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "assets/index-n.svg",
+        "selectedIconPath": "assets/index-y.svg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "assets/me-n.svg",
+        "selectedIconPath": "assets/me-y.svg"
+      }
+    ]
+  }
+}
