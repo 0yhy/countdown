@@ -27,6 +27,7 @@ page {
   justify-content: center;
   width: 256rpx;
   height: 64rpx;
+  font-size: 32rpx;
   border-radius: 32rpx;
   color: white;
   margin: 50rpx 0;

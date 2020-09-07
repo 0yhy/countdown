@@ -6,8 +6,8 @@ Page({
     themeColor: app.globalColor,
     today: transferDate(),
     items: [
-      { title: "考研", tip: "", date: "2020-10-27" },
-      { title: "托福", tip: "", date: "2020-12-19" },
+      { title: "考研", tip: "", start_date: "2020-10-27", end_date: "2020-12-19", left: 9 },
+      { title: "托福", tip: "", start_date: "2020-12-19", end_date: "2020-12-19", left: 129 },
     ],
   },
   onAddClick() {

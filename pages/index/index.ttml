@@ -5,7 +5,18 @@
   </view>
   <view class='date'>今天是{{today}}</view>
   <view class='items' tt:for='{{items}}'>
+    <view class='items-background'></view>
     <view class='items-mask'></view>
-    <view class='items-item'>{{item.title}}</view>
+    <view class='items-left'>
+      <view class='items-left-text'>
+        <view class='items-left-text-title'>{{item.title}}</view>
+        <view class='items-left-text-date'>从{{item.start_date}}至{{item.start_date}}</view>
+      </view>
+      <view class='items-left-progress'>
+        <view class='items-left-progress-done'></view>
+      </view>
+    </view>
+    <view class='items-middle'></view>
+    <view class='items-right'>{{item.left}}</view>
   </view>
 </view>
