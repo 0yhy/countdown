@@ -4,19 +4,29 @@
     <image class='add-img' src='../../assets/add.svg'></image>
   </view>
   <view class='date'>今天是{{today}}</view>
-  <view class='items' tt:for='{{items}}'>
-    <view class='items-background'></view>
+  <view class='items' tt:for='{{items}}' data-key='{{index}}' style="height: {{item.folded ? '200rpx' : '300rpx'}}" bindtap="onItemClick">
+    <view class='items-background' style='background-image: url({{randomBackground[index]}})'></view>
     <view class='items-mask'></view>
     <view class='items-left'>
       <view class='items-left-text'>
         <view class='items-left-text-title'>{{item.title}}</view>
         <view class='items-left-text-date'>从{{item.start_date}}至{{item.start_date}}</view>
       </view>
-      <view class='items-left-progress'>
+      <view class='items-left-progress' hidden='{{!item.folded}}' style="width: {{item.left / item.total * 100}}%;">
         <view class='items-left-progress-done'></view>
+      </view>
+      <view class='items-left-tip' hidden='{{item.folded}}'>
+        {{item.tip ? item.tip : '无备注'}}
+      </view>
+      <view class='items-left-buttons' hidden='{{item.folded}}'>
+        <view class='items-left-buttons-button' style="background-color: {{themeColor}}" catchtap='onEditClick'>编辑</view>
+        <view class='items-left-buttons-button' style="background-color: {{themeColor}}" catchtap='onDeleteClick' data-title='{{item.title}}'>删除</view>
       </view>
     </view>
     <view class='items-middle'></view>
-    <view class='items-right'>{{item.left}}</view>
+    <view class='items-right'>
+      <view class='items-right-left'>{{item.left}}</view>
+      <view class='items-right-total' hidden='{{item.folded}}'>共{{item.total}}天</view>
+    </view>
   </view>
-</view>
+</view> 

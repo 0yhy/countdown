@@ -1,4 +1,4 @@
 App({
   onLaunch() {},
-  globalColor: "#0077ff",
+  globalColor: "#13c2c2",
 });
