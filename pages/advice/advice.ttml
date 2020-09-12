@@ -1,0 +1,4 @@
+<view class='wrapper'>
+  <textarea class='advice' placeholder='UI太丑？设计不合理？槽点太多？期待你的宝贵意见~' bindinput='onAdviceInput'/>
+  <view class='save' style='background-color: {{themeColor}}' bindtap='onSaveClick'>提交</view>
+</view>

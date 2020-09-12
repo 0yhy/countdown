@@ -1,11 +1,15 @@
 <view class='wrapper'>
   <view class='row'>
     <view>标题</view>
-    <input class='row-right' bindinput='onTitleInput'/>
+    <input class='row-right' bindinput='onTitleInput' value="{{title}}"/>
   </view>
   <view class='row'>
     <view>备注</view>
-    <input class='row-right' placeholder='非必填' bindinput='onTipInput'/>
+    <input class='row-right' placeholder='非必填' bindinput='onTipInput' value="{{tip}}"/>
+  </view>
+  <view class='row' bindtap="onStartDateClick">
+    <view>开始日期</view>
+    <view class='row-right'>{{startDate}}</view>
   </view>
   <view class='row'>
     <picker
@@ -17,14 +21,10 @@
       style='width: 100%;'
     >
       <view class='row' style='width: 100%;'>
-        <view>选择日期</view>
+        <view>结束日期</view>
         <view class='row-right'>{{endDate}}</view>
       </view>
     </picker>
-  </view>
-  <view class='row'>
-    <view>剩余天数</view>
-    <view class='row-right'>{{count}}天</view>
   </view>
   <view class='save' style='background-color: {{themeColor}}' bindtap='onSaveClick'>保存</view>
 </view>

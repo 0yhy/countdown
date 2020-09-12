@@ -20,6 +20,12 @@
   width: 80%;
   height: 80%;
 }
+.noresult {
+  position: absolute;
+  top: 40%;
+  color: grey;
+  font-size: 28rpx;
+}
 .items {
   transition: height 0.2s;
   color: white;
@@ -46,6 +52,12 @@
   height: 100%;
   width: 100%;
   border-radius: 30rpx;
+}
+.items-done {
+  position: absolute;
+  z-index: 10000;
+  width: 150rpx;
+  height: 150rpx;
 }
 .items-left {
   position: absolute;

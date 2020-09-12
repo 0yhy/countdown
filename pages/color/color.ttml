@@ -1,0 +1,10 @@
+<view class='wrapper'>
+  <view class='colors'>
+    <view tt:for="{{colors}}" class='colors-item' bindtap="onColorClick" data-color="{{item.rgb}}" style='background-color: {{item.rgb}}; border: 8rpx solid {{item.rgb === selectColor ? themeColor : "white"}};'>
+      <view>{{item.rgb}}</view>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <input class='custom' placeholder='十六进制自定义颜色 如#000512' bindinput="onColorInput"/>
+  <view class='save' style='background-color: {{themeColor}}' bindtap='onSaveClick'>保存</view>
+</view>

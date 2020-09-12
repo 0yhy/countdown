@@ -8,10 +8,15 @@ Page({
     themeColor: app.globalColor,
     startDate: "2000-10-27",
     endDate: "",
-    count: "?",
+    title: "",
+    tip: "",
+    _id: "",
   },
-  onShow: function () {
-    this.setData({ startDate: transferDate() });
+  onLoad: function (option) {
+    console.log(JSON.parse(option.item));
+    const item = JSON.parse(option.item);
+    const { start_date, end_date, title, tip, _id } = item;
+    this.setData({ startDate: start_date, endDate: end_date, title: title, tip: tip, _id: _id });
   },
   onDateChange(e) {
     console.log(e);
@@ -26,24 +31,33 @@ Page({
   onTipInput(e) {
     this.setData({ tip: e.detail.value });
   },
+  onStartDateClick() {
+    tt.showToast({
+      title: "开始日期不能修改哦！",
+      icon: "none",
+      duration: 1500,
+    });
+  },
   onSaveClick() {
-    const { title, tip, startDate, endDate } = this.data;
+    const { title, tip, startDate, endDate, _id } = this.data;
     tt.showLoading({
       title: "保存中...",
     });
     if (this.data.title && this.data.endDate) {
-      Request.post("countdown", { title: title, tip: tip, start_date: startDate, end_date: endDate }).then(() => {
-        tt.hideLoading();
-        tt.showToast({
-          title: "保存成功",
-          duration: 1500,
-        });
-        setTimeout(() => {
-          tt.navigateBack({
-            delta: 1,
+      Request.put("countdown", { title: title, tip: tip, start_date: startDate, end_date: endDate, _id: _id }).then(
+        () => {
+          tt.hideLoading();
+          tt.showToast({
+            title: "保存成功",
+            duration: 1500,
           });
-        }, 1500);
-      });
+          setTimeout(() => {
+            tt.navigateBack({
+              delta: 1,
+            });
+          }, 1500);
+        }
+      );
     } else {
       let title = "";
       if (!this.data.endDate) {

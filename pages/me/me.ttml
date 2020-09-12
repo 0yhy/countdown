@@ -1,0 +1,20 @@
+<view class='wrapper'>
+  <view class='top' style='background: url({{randomBackground}}); background-size: cover; background-position: center center;'>
+  </view>
+  <view class='row' bindtap='onThemeClick'>
+    <image class='row-img' src='../../assets/color.svg' />
+    <view class='row-text'>修改主题色</view>
+  </view>
+  <button class='row' open-type='share'>
+    <image class='row-img' src='../../assets/share.svg' />
+    <view class='row-text'>分享给飞书好友</view>
+  </button>
+  <view class='row' bindtap='onAdviceClick'>
+    <image class='row-img' src='../../assets/comments.svg' />
+    <view class='row-text'>反馈与意见</view>
+  </view>
+  <view class='row' bindtap='onAboutClick'>
+    <image class='row-img' src='../../assets/prompt.svg' />
+    <view class='row-text'>关于</view>
+  </view>
+</view>

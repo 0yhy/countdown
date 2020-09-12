@@ -10,12 +10,56 @@
 	"projectname": "countdown",
 	"condition": {
 		"miniprogram": {
-			"current": -1,
+			"current": 3,
 			"list": [
 				{
 					"id": 0,
 					"name": "添加倒计时",
 					"pathName": "pages/add/add",
+					"query": "",
+					"scene": "1001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 1,
+					"name": "我的",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": "1001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 2,
+					"name": "修改主题色",
+					"pathName": "pages/color/color",
+					"query": "",
+					"scene": "1001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 3,
+					"name": "反馈与意见",
+					"pathName": "pages/advice/advice",
+					"query": "",
+					"scene": "1001",
+					"referrerInfo": {
+						"appId": "",
+						"extraData": ""
+					}
+				},
+				{
+					"id": 4,
+					"name": "关于",
+					"pathName": "pages/about/about",
 					"query": "",
 					"scene": "1001",
 					"referrerInfo": {

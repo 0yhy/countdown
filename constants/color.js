@@ -1,0 +1,23 @@
+const COLORS = [
+  { rgb: "#e3b4b8", name: "鼠鼻红" },
+  { rgb: "#c08eaf", name: "萝兰紫" },
+  { rgb: "#525288", name: "野菊紫" },
+  { rgb: "#2775b6", name: "景泰蓝" },
+  { rgb: "#0f95b0", name: "胆矾蓝" },
+  { rgb: "#5dbe8a", name: "蔻梢绿" },
+  { rgb: "#fbda41", name: "油菜花黄" },
+  { rgb: "#bbb5ac", name: "中灰" },
+  { rgb: "#f07c82", name: "香叶红" },
+  { rgb: "#806d9e", name: "槿紫" },
+  { rgb: "#22a2c3", name: "海青" },
+  { rgb: "#45b787", name: "蛙绿" },
+  { rgb: "#b2cf87", name: "橄榄石绿" },
+  { rgb: "#ebb10d", name: "栀子黄" },
+  { rgb: "#fca104", name: "橙皮黄" },
+  { rgb: "#9a8878", name: "海鸥灰" },
+  { rgb: "#edc3ae", name: "藕荷" },
+  { rgb: "#ef6f48", name: "草莓红" },
+  { rgb: "#8fb2c9", name: "晴山蓝" },
+  { rgb: "#1ba784", name: "竹绿" },
+];
+export default COLORS;

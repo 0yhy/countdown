@@ -1,0 +1,8 @@
+<view class='wrapper'>
+  <image class='avatar' src='../../assets/shaw.jpg' />
+  <view class='text'>
+    <view class='text-para'>个人制作，开发不易。第一次写飞书小程序，期待更多的宝贵意见。</view>
+    <view class='text-para'>个人博客：https://oyhy.net</view>
+    <view class='text-para'>GitHub：https://github.com/OuyangHanyu</view>
+  </view>
+</view>
